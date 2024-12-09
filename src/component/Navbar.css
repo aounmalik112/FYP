@@ -1,0 +1,134 @@
+.navbar {
+  background-color: #ffffff; /* White background for navbar */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Space out the logo and links */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  color: #2c3e50; /* Dark color for the logo text */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 40px; /* Adjust logo size */
+  height: 40px; /* Adjust logo size */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end; /* Push links to the right */
+  flex-wrap: nowrap; /* Ensure links stay on one line */
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  color: #2c3e50; /* Dark color for links */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  white-space: nowrap; /* Prevent wrapping inside each link */
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  color: #2ecc71; /* Light green for hover on main links */
+  font-weight: bold; /* Change text style on hover */
+}
+
+.signup-button {
+  background-color: #29b888; /* Button background color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #199348; /* Darker shade on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f9fa; /* Light background for dropdown */
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.dropdown-menu li {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Adjust padding */
+}
+
+.dropdown-menu a {
+  color: #2c3e50; /* Dark color for dropdown links */
+  padding: 0.5rem 1rem;
+  display: block; /* Full width */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu a:hover {
+  background-color: #2ecc71; /* Light green background for dropdown items on hover */
+  color: #ffffff; /* Change text color on hover */
+  font-weight: bold; /* Change text style on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 1rem;
+    position: static;
+    font-size: 1.5rem;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+}

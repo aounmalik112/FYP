@@ -1,0 +1,117 @@
+/* About Us Page Styles */
+.about-us {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Section */
+.about-us-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #27ae60;;
+  color: #ecf0f1;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1.5s ease;
+}
+
+.about-us-hero h1 {
+  font-size: 3rem;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.about-us-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Content Section */
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.mission-section,
+.team-section {
+  background-color: #e8f5e9; /* Light green background */
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s;
+  animation: fadeInUp 2s ease;
+}
+
+.mission-section:hover,
+.team-section:hover {
+  transform: translateY(-10px);
+  background-color: #c8e6c9; /* Lighter green on hover */
+}
+
+.mission-section h2,
+.team-section h2 {
+  font-size: 2.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  animation: slideInFromLeft 1.5s ease;
+}
+
+.mission-section p,
+.team-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #34495e;
+  animation: fadeIn 2s ease;
+}
+
+/* Team Members Section */
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  animation: fadeInUp 2.5s ease;
+}
+
+.team-member {
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #388e3c; /* Light green heading */
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  background-color: #c8e6c9; /* Lighter green on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}

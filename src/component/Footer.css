@@ -1,0 +1,67 @@
+.footer {
+  background-color: #2c3e50; /* Dark background for contrast */
+  color: #ecf0f1; /* Light text color for readability */
+  padding: 2rem 1rem;
+  text-align: center; /* Center align text */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Space out sections */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  max-width: 1200px; /* Max width to contain content */
+  margin: 0 auto; /* Center footer content */
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+  flex: 1; /* Allow sections to take up available space */
+  min-width: 200px; /* Ensure sections don't get too narrow */
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ecf0f1; /* Title color */
+  text-transform: uppercase; /* Make titles uppercase */
+  display: inline-block; /* Inline block to allow styling */
+  padding-bottom: 0.5rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bdc3c7; /* Slightly lighter text for details */
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column; /* Arrange links in a column */
+  align-items: center; /* Center the links */
+  gap: 0.5rem; /* Space between links */
+}
+
+.social-media a {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-media a:hover {
+  color: #3498db; /* Change color on hover */
+  transform: translateY(-3px); /* Slight move up effect */
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #34495e; /* Top border for separation */
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #bdc3c7;
+  margin: 0;
+}
